@@ -6,7 +6,6 @@ import notfound from '../Images/notfound.gif';
 let API_key="&api_key=db95773a7fb212ba790d71f6adac0e7e";
 let base_url="https://api.themoviedb.org/3";
 let url=base_url+"/discover/movie?sort_by=popularity.desc"+API_key;
-let arr=["Popular","Theatre","Kids","Drama","Comedie"];
 const MoviePage=()=>{
     const [movieData,setData]=useState([]);
     const [url_set,setUrl]=useState(url);
