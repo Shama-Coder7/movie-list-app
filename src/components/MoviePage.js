@@ -3,7 +3,7 @@ import react,{useState, useEffect} from "react";
 import MovieCard from "./MovieCard";
 import notfound from '../Images/notfound.gif';
 
-let API_key="&api_key=db95773a7fb212ba790d71f6adac0e7e";
+let API_key = "&api_key=1a0c67e8cb815a3ea943f819a8ebcdba";
 let base_url="https://api.themoviedb.org/3";
 let url=base_url+"/discover/movie?sort_by=popularity.desc"+API_key;
 const MoviePage=()=>{
@@ -20,7 +20,7 @@ const MoviePage=()=>{
     const searchMovie=(evt)=>{
         if(evt.key=="Enter")
         {
-            url=base_url+"/search/movie?api_key=db95773a7fb212ba790d71f6adac0e7e&query="+search;
+            url=base_url+"/search/movie?api_key=1a0c67e8cb815a3ea943f819a8ebcdba&query="+search;
             setUrl(url);
             setSearch(" ");
         }
