@@ -1,5 +1,4 @@
-
-import react, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import MovieCard from './MovieCard';
 import notfound from '../Images/notfound.gif';
 
